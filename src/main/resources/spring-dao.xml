@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+       <!--<bean id="studentDao" class="org.wang.sms.dao.impl.StudentDaoImpl">-->
+              <!--<property name="sessionFactory" ref="sessionFactory"/>-->
+       <!--</bean>-->
+
+       <!--<bean id="teacherDao" class="org.wang.sms.dao.impl.TeacherDaoImpl">-->
+              <!--<property name="sessionFactory" ref="sessionFactory"/>-->
+       <!--</bean>-->
+
+       <!--<bean id="numberingDao" class="org.wang.sms.dao.impl.NumberingDaoImpl">-->
+              <!--<property name="sessionFactory" ref="sessionFactory"/>-->
+       <!--</bean>-->
+
+       <!--<bean id="gradeDao" class="org.wang.sms.dao.impl.GradeDaoImpl">-->
+              <!--<property name="sessionFactory" ref="sessionFactory"/>-->
+       <!--</bean>-->
+
+       <!--<bean id="subjectDao" class="org.wang.sms.dao.impl.SubjectDaoImpl">-->
+              <!--<property name="sessionFactory" ref="sessionFactory"/>-->
+       <!--</bean>-->
+
+       <!--<bean id="examinationDao" class="org.wang.sms.dao.impl.ExaminationDaoImpl">-->
+              <!--<property name="sessionFactory" ref="sessionFactory"/>-->
+       <!--</bean>-->
+
+
+</beans>

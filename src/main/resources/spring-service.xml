@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+       <!-- service 层-->
+       <bean id="studentService" class="org.wang.sms.service.impl.StudentServiceImpl">
+              <property name="studentDao" ref="studentDao" />
+       </bean>
+
+       <bean id="teacherService" class="org.wang.sms.service.impl.TeacherServiceImpl">
+              <property name="teacherDao" ref="teacherDao" />
+       </bean>
+
+       <bean id="numberingService" class="org.wang.sms.service.impl.NumberingServiceImpl">
+              <property name="numberingDao" ref="numberingDao" />
+       </bean>
+
+       <bean id="gradeService" class="org.wang.sms.service.impl.GradeServiceImpl">
+              <property name="gradeDao" ref="gradeDao" />
+       </bean>
+
+       <bean id="subjectService" class="org.wang.sms.service.impl.SubjectServiceImpl">
+              <property name="subjectDao" ref="subjectDao" />
+       </bean>
+
+       <bean id="examinationService" class="org.wang.sms.service.impl.ExaminationServiceImpl">
+              <property name="examinationDao" ref="examinationDao" />
+       </bean>
+
+
+
+       <!-- validator 层 -->
+       <!--<bean id="validator" class="org.wang.sms.validator.UserValidatorser">-->
+              <!--<property name="projectService" ref="projectService"/>-->
+       <!--</bean>-->
+
+</beans>
