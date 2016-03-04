@@ -63,6 +63,7 @@
         <url-pattern>/</url-pattern>
         <!-- 这里不能加* -->
     </servlet-mapping>
+    
     <!-- Spring Security -->
     <!--<filter>-->
         <!--<filter-name>springSecurityFilterChain</filter-name>-->

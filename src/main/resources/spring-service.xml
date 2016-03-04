@@ -12,14 +12,6 @@
               <property name="teacherDao" ref="teacherDao" />
        </bean>
 
-       <bean id="numberingService" class="org.wang.sms.service.impl.NumberingServiceImpl">
-              <property name="numberingDao" ref="numberingDao" />
-       </bean>
-
-       <bean id="gradeService" class="org.wang.sms.service.impl.GradeServiceImpl">
-              <property name="gradeDao" ref="gradeDao" />
-       </bean>
-
        <bean id="subjectService" class="org.wang.sms.service.impl.SubjectServiceImpl">
               <property name="subjectDao" ref="subjectDao" />
        </bean>
@@ -28,7 +20,13 @@
               <property name="examinationDao" ref="examinationDao" />
        </bean>
 
+       <bean id="clazzService" class="org.wang.sms.service.impl.ClazzServiceImpl">
+              <property name="clazzDao" ref="clazzDao" />
+       </bean>
 
+       <bean id="achievementService" class="org.wang.sms.service.impl.AchievementServiceImpl">
+              <property name="achievementDao" ref="achievementDao" />
+       </bean>
 
        <!-- validator 层 -->
        <!--<bean id="validator" class="org.wang.sms.validator.UserValidatorser">-->
