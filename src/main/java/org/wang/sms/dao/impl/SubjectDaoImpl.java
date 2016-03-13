@@ -11,4 +11,18 @@ import java.util.List;
  */
 public class SubjectDaoImpl extends BaseDao implements SubjectDao {
 
+  @Override
+  public List<Subject> list() {
+    return getSession().createQuery("from Subject").list();
+  }
+
+  @Override
+  public Subject find(Integer id) {
+    return (Subject) getSession().get(Subject.class,id);
+  }
+
+  @Override
+  public Subject find(String name) {
+    return (Subject) getSession().createQuery("from Subject where name = ?").setParameter(0,name).setMaxResults(1).uniqueResult();
+  }
 }

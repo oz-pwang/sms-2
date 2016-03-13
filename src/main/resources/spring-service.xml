@@ -28,6 +28,10 @@
               <property name="achievementDao" ref="achievementDao" />
        </bean>
 
+       <bean id="adminService" class="org.wang.sms.service.impl.AdminServiceImpl">
+              <property name="adminDao" ref="adminDao" />
+       </bean>
+
        <!-- validator 层 -->
        <!--<bean id="validator" class="org.wang.sms.validator.UserValidatorser">-->
               <!--<property name="projectService" ref="projectService"/>-->

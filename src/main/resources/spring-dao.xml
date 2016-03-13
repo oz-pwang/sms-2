@@ -27,5 +27,9 @@
               <property name="sessionFactory" ref="sessionFactory"/>
        </bean>
 
+       <bean id="adminDao" class="org.wang.sms.dao.impl.AdminDaoImpl">
+              <property name="sessionFactory" ref="sessionFactory"/>
+       </bean>
+
 
 </beans>

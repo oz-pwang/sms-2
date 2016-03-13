@@ -9,6 +9,7 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 import java.io.Serializable;
 import java.util.LinkedHashSet;
 import java.util.Set;
@@ -40,6 +41,9 @@ public class Student extends User implements Serializable {
 // 当前学生的所有成绩
   private Set<Achievement> allScores = new LinkedHashSet<Achievement>();
 
+  @JoinColumn(name = "add_id",referencedColumnName="ref_name")
+  @OneToOne
+  private Address address;
 
   public Integer getId() {
     return id;
@@ -73,4 +77,11 @@ public class Student extends User implements Serializable {
     this.allScores = allScores;
   }
 
+  public Address getAddress() {
+    return address;
+  }
+
+  public void setAddress(Address address) {
+    this.address = address;
+  }
 }

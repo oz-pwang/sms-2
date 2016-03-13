@@ -1,5 +1,8 @@
 package org.wang.sms.model;
 
+import org.hibernate.annotations.Cascade;
+
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -11,6 +14,7 @@ import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import java.io.Serializable;
+import java.util.HashSet;
 import java.util.Set;
 
 /**
@@ -32,15 +36,19 @@ public class Clazz implements Serializable {
 //  当前班级拥有的所有学生
   private Set<Student> studentSet;
 
-  @JoinColumn
-  @OneToOne
+  @JoinColumn(name = "teacherId")
+  @OneToOne(cascade = {CascadeType.ALL})
 //  班主任
   private Teacher headTeacher;
 
   @JoinColumn
   @OneToMany
+  private Set<Examination> examinationSet = new HashSet<Examination>();
+
+  @JoinColumn
+  @OneToMany
 //  所有的任课 老师（ 多个科目   不同的老师）
-  private Set<Teacher> teacherSet;
+  private Set<Teacher> teacherSet = new HashSet<Teacher>();
 
   public Integer getId() {
     return id;
@@ -81,5 +89,13 @@ public class Clazz implements Serializable {
 
   public void setName(String name) {
     this.name = name;
+  }
+
+  public Set<Examination> getExaminationSet() {
+    return examinationSet;
+  }
+
+  public void setExaminationSet(Set<Examination> examinationSet) {
+    this.examinationSet = examinationSet;
   }
 }

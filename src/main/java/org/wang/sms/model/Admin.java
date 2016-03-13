@@ -6,6 +6,7 @@ import java.io.Serializable;
 /**
  * Created by Yang Wang on 16/3/3.
  */
+@Entity
 public class Admin implements Serializable{
 
   private static final String ROLE = "ADMIN";
@@ -16,6 +17,9 @@ public class Admin implements Serializable{
 
   @Column(length = 12 , nullable = false)
   private String name;
+
+  @Column(length = 16 , nullable = false)
+  private String passWord;
 
   public String getPassWord() {
     return passWord;
@@ -41,6 +45,5 @@ public class Admin implements Serializable{
     this.id = id;
   }
 
-  @Column(length = 16 , nullable = false)
-  private String passWord;
+
 }

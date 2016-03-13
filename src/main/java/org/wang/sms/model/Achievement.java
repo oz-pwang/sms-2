@@ -25,17 +25,17 @@ public class Achievement implements Serializable {
 //  分数
   private Integer fraction;
 
-  @JoinColumn
+  @JoinColumn(name = "studentId")
   @ManyToOne(cascade = {CascadeType.ALL})
 //  这是哪个学生的成绩
   private Student student;
 
-  @JoinColumn
+  @JoinColumn(name = "examinationId")
   @ManyToOne(cascade = {CascadeType.ALL})
   //  此次成绩对应的考试
   private Examination examination;
 
-  @JoinColumn
+  @JoinColumn(name = "subjectId")
   @ManyToOne(cascade = {CascadeType.ALL})
   //  此次成绩对应的科目
   private Subject subject;
