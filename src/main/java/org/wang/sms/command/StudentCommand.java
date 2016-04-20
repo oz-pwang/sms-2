@@ -3,8 +3,6 @@ package org.wang.sms.command;
 import org.springframework.util.StringUtils;
 import org.wang.sms.model.Clazz;
 import org.wang.sms.model.Student;
-import org.wang.sms.model.Subject;
-import org.wang.sms.model.Teacher;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

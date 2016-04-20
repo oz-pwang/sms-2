@@ -1,7 +1,6 @@
 package org.wang.sms.service;
 
 import org.wang.sms.model.Clazz;
-import org.wang.sms.model.Student;
 
 import java.util.List;
 

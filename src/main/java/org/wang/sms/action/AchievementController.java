@@ -1,6 +1,6 @@
 package org.wang.sms.action;
 
-import com.sun.tools.internal.ws.processor.model.Request;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -8,8 +8,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.wang.sms.command.AchievementCommand;
-import org.wang.sms.command.ClazzCommand;
-import org.wang.sms.command.TeacherCommand;
 import org.wang.sms.model.Achievement;
 import org.wang.sms.model.Clazz;
 import org.wang.sms.model.Examination;
@@ -25,7 +23,6 @@ import org.wang.sms.service.TeacherService;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.util.ArrayList;
 import java.util.List;
 
 /**

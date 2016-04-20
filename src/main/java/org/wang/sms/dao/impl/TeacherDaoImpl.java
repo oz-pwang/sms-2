@@ -1,7 +1,6 @@
 package org.wang.sms.dao.impl;
 
 import org.wang.sms.dao.BaseDao;
-import org.wang.sms.dao.SubjectDao;
 import org.wang.sms.dao.TeacherDao;
 import org.wang.sms.model.Teacher;
 

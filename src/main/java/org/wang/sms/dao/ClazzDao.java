@@ -1,6 +1,5 @@
 package org.wang.sms.dao;
 
-import org.wang.sms.model.Admin;
 import org.wang.sms.model.Clazz;
 
 import java.util.List;

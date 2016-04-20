@@ -1,7 +1,6 @@
 package org.wang.sms.dao.impl;
 
 import org.wang.sms.dao.BaseDao;
-import org.wang.sms.dao.ClazzDao;
 import org.wang.sms.dao.ExaminationDao;
 import org.wang.sms.model.Examination;
 

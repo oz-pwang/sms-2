@@ -7,12 +7,10 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.wang.sms.command.ExaminationCommand;
 import org.wang.sms.command.TeacherCommand;
 import org.wang.sms.command.TeacherExaminationCommand;
 import org.wang.sms.model.Clazz;
 import org.wang.sms.model.Examination;
-import org.wang.sms.model.Student;
 import org.wang.sms.model.Subject;
 import org.wang.sms.model.Teacher;
 import org.wang.sms.service.ClazzService;
@@ -21,11 +19,9 @@ import org.wang.sms.service.SubjectService;
 import org.wang.sms.service.TeacherService;
 import org.wang.sms.until.validator.UserValidator;
 
-import javax.persistence.SecondaryTable;
 import javax.servlet.http.HttpServletRequest;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Set;
 
 /**
  * Created by Yang Wang on 16/2/15.

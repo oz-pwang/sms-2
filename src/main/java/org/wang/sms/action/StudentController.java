@@ -7,10 +7,8 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.wang.sms.command.ExaminationCommand;
 import org.wang.sms.command.StudentCommand;
 import org.wang.sms.command.StudentExaminationCommand;
-import org.wang.sms.model.Achievement;
 import org.wang.sms.model.Clazz;
 import org.wang.sms.model.Examination;
 import org.wang.sms.model.Student;
@@ -20,10 +18,8 @@ import org.wang.sms.service.ExaminationService;
 import org.wang.sms.service.StudentService;
 import org.wang.sms.until.validator.UserValidator;
 
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Set;
 
 /**
  * Created by Yang Wang on 16/2/15.

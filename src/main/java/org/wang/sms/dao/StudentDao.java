@@ -2,7 +2,6 @@ package org.wang.sms.dao;
 
 import org.wang.sms.model.Student;
 
-import java.io.Serializable;
 import java.util.List;
 
 /**

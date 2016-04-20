@@ -3,11 +3,9 @@ package org.wang.sms.service.impl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.wang.sms.dao.ClazzDao;
 import org.wang.sms.dao.ExaminationDao;
-import org.wang.sms.model.Clazz;
 import org.wang.sms.model.Examination;
 import org.wang.sms.service.ExaminationService;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
